@@ -1,0 +1,5 @@
+driver=com.mysql.jdbc.Driver
+dbName=bookstoredb
+hostName=127.0.0.1
+username=root
+password=nthangzuzu
