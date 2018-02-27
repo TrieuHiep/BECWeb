@@ -17,11 +17,11 @@ public class TestServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        Properties properties = new Properties();
-//        properties.load(
-//                this.getClass().getClassLoader()
-//                                .getResourceAsStream("MySQL_DBInfo.prop"));
-//        String host = properties.getProperty("hostName");
-//        System.out.println(host);
+        Properties properties = new Properties();
+        properties.load(
+                this.getClass().getClassLoader()
+                                .getResourceAsStream("MySQL_DBInfo.prop"));
+        String host = properties.getProperty("hostName");
+        System.out.println(host);
     }
 }
