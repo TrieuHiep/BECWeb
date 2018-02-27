@@ -2,5 +2,5 @@ package model.itemspkg.electronicspkg;
 
 import model.itemspkg.Product;
 
-public class Electronics extends Product{
+public class Electronic extends Product{
 }
