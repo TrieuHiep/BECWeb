@@ -1,7 +1,12 @@
 package utils;
 
+import model.userpkg.FullName;
+
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
+import java.util.StringTokenizer;
 
 public class ConfigReader {
     private static final ConfigReader instance = new ConfigReader();
@@ -27,4 +32,6 @@ public class ConfigReader {
     public synchronized static ConfigReader getInstance() {
         return instance;
     }
+
 }
+

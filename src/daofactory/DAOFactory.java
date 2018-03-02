@@ -1,11 +1,14 @@
 package daofactory;
 
+import dao.CustomerDAO;
 import dao.bookdaopkg.BookDAO;
 import dao.electronicsdaopkg.ElectronicsDAO;
 
 public abstract class DAOFactory {
     public static final int MYSQL = 1;
     public static final int SQLServer = 2;
+
+    public abstract CustomerDAO getCustomerDAO();
 
     public abstract BookDAO getBookDAO();
 

@@ -5,6 +5,9 @@ import dao.AddressDAO;
 import dao.CustomerDAO;
 import dao.FullNameDAO;
 import daofactory.DAOFactory;
+import daoimpl.AccountDAOImpl;
+import daoimpl.AddressDAOImpl;
+import daoimpl.FullNameDAOImpl;
 import model.customerpkg.Customer;
 import model.userpkg.Account;
 import model.userpkg.Address;
@@ -20,6 +23,10 @@ public class CustomerFacade {
 
     public CustomerFacade() {
         DAOFactory mysqlDAOFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+        this.customerDAO = mysqlDAOFactory.getCustomerDAO();
+        this.accountDAO = new AccountDAOImpl();
+        this.addressDAO = new AddressDAOImpl();
+        this.fullNameDAO = new FullNameDAOImpl();
     }
 
     public boolean saveCustomerData(Customer customer) {

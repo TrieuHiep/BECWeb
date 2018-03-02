@@ -20,4 +20,15 @@
         <servlet-name>Register</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
+
+
+    <!--jsp mapping-->
+    <servlet>
+        <servlet-name>registerJSP</servlet-name>
+        <jsp-file>/register.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerJSP</servlet-name>
+        <url-pattern>/registerjsp</url-pattern>
+    </servlet-mapping>
 </web-app>

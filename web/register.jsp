@@ -50,7 +50,8 @@
 
                     <br><b>General Information</b><br>
                     Fullname<br> <input class="form-group" type="text" name="fullname" value=""><br>
-
+                    Age<br>
+                    <input class="form-group" type="text" name="age" value=""><br>
                     <br><b>Customer Information</b><br>
                     Email<br>
                     <input class="form-group" type="text" name="email" value=""><br>

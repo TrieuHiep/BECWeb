@@ -1,7 +1,7 @@
 package model.userpkg;
 
 public class Person {
-    protected int idPerson;
+//    protected int idPerson;
     protected FullName fullName;
     protected Account account;
     protected Address address;
@@ -10,21 +10,27 @@ public class Person {
     public Person() {
     }
 
-    public Person(int idPerson, FullName fullName, Account account, Address address, int age) {
-        this.idPerson = idPerson;
+//    public Person(int idPerson, FullName fullName, Account account, Address address, int age) {
+//        this.idPerson = idPerson;
+//        this.fullName = fullName;
+//        this.account = account;
+//        this.address = address;
+//        this.age = age;
+//    }
+    public Person(FullName fullName, Account account, Address address, int age) {
+//        this.idPerson = idPerson;
         this.fullName = fullName;
         this.account = account;
         this.address = address;
         this.age = age;
     }
-
-    public int getIdPerson() {
-        return idPerson;
-    }
-
-    public void setIdPerson(int idPerson) {
-        this.idPerson = idPerson;
-    }
+//    public int getIdPerson() {
+//        return idPerson;
+//    }
+//
+//    public void setIdPerson(int idPerson) {
+//        this.idPerson = idPerson;
+//    }
 
     public FullName getFullName() {
         return fullName;
