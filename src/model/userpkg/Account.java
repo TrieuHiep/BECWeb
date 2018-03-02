@@ -1,8 +1,7 @@
 package model.userpkg;
 
-import java.util.Objects;
-
 public class Account {
+
     private String username;
     private String password;
 
@@ -33,14 +32,18 @@ public class Account {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Account)) return false;
+
         Account account = (Account) o;
-        return Objects.equals(username, account.username) &&
-                Objects.equals(password, account.password);
+
+        if (!getUsername().equals(account.getUsername())) return false;
+        return getPassword().equals(account.getPassword());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(username, password);
+        int result = getUsername().hashCode();
+        result = 31 * result + getPassword().hashCode();
+        return result;
     }
 }

@@ -1,5 +1,12 @@
 package model.itemspkg.clothespkg;
 
-public class TShirt extends Clothes {
+import model.itemspkg.ItemsInterface;
+
+public class TShirt extends Clothes implements ItemsInterface {
     private int neckStyle;
+
+    @Override
+    public void buy() {
+
+    }
 }

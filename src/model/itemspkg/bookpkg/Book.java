@@ -1,8 +1,9 @@
 package model.itemspkg.bookpkg;
 
+import model.itemspkg.ItemsInterface;
 import model.itemspkg.Product;
 
-public class Book extends Product {
+public class Book extends Product implements ItemsInterface {
     protected int idBook;
     protected String author;
     protected Publisher publisher;
@@ -38,5 +39,10 @@ public class Book extends Product {
 
     public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
+    }
+
+    @Override
+    public void buy() {
+
     }
 }

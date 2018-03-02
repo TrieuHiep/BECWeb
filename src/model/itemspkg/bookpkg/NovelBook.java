@@ -1,5 +1,7 @@
 package model.itemspkg.bookpkg;
 
+import model.itemspkg.ItemsInterface;
+
 public class NovelBook extends Book {
     private int totalChapter;
 
