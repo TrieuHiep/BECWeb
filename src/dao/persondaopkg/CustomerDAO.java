@@ -1,4 +1,4 @@
-package dao;
+package dao.persondaopkg;
 
 import model.customerpkg.Customer;
 

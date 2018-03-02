@@ -1,6 +1,6 @@
 package daofactory;
 
-import dao.CustomerDAO;
+import dao.persondaopkg.CustomerDAO;
 import dao.bookdaopkg.BookDAO;
 import dao.electronicsdaopkg.ElectronicsDAO;
 import daoimpl.BookDaoImpl;

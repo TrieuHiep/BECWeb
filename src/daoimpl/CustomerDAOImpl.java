@@ -1,7 +1,7 @@
 package daoimpl;
 
-import dao.CustomerDAO;
-import dao.PersonDAO;
+import dao.persondaopkg.CustomerDAO;
+import dao.persondaopkg.PersonDAO;
 import model.customerpkg.Customer;
 import utils.MySQLConnector;
 

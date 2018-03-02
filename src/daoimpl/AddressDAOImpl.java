@@ -1,6 +1,6 @@
 package daoimpl;
 
-import dao.AddressDAO;
+import dao.persondaopkg.AddressDAO;
 import model.userpkg.Address;
 import utils.MySQLConnector;
 

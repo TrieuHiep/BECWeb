@@ -1,9 +1,9 @@
 package facade;
 
-import dao.AccountDAO;
-import dao.AddressDAO;
-import dao.CustomerDAO;
-import dao.FullNameDAO;
+import dao.persondaopkg.AccountDAO;
+import dao.persondaopkg.AddressDAO;
+import dao.persondaopkg.CustomerDAO;
+import dao.persondaopkg.FullNameDAO;
 import daofactory.DAOFactory;
 import daoimpl.AccountDAOImpl;
 import daoimpl.AddressDAOImpl;

@@ -1,13 +1,5 @@
-import dao.PersonDAO;
-import daoimpl.PersonDAOImpl;
-import facade.CustomerFacade;
-import model.customerpkg.Customer;
-import model.userpkg.Account;
-import model.userpkg.Address;
 import model.userpkg.FullName;
-import model.userpkg.Person;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;

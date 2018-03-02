@@ -1,6 +1,6 @@
 package daoimpl;
 
-import dao.AccountDAO;
+import dao.persondaopkg.AccountDAO;
 import model.userpkg.Account;
 import utils.MySQLConnector;
 
