@@ -6,6 +6,7 @@ import utils.MySQLConnector;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class AccountDAOImpl implements AccountDAO{
@@ -32,6 +33,19 @@ public class AccountDAOImpl implements AccountDAO{
             if(aff > 0) return true;
         } catch (SQLException ex) {
             this.connection.rollback();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean checkAccount(Account account) throws SQLException {
+        String sqlCommand = "SELECT * FROM account WHERE username = ? AND password = ?";
+        PreparedStatement statement = this.connection.prepareStatement(sqlCommand);
+        statement.setString(1, account.getUsername());
+        statement.setString(2,account.getPassword());
+        ResultSet res = statement.executeQuery();
+        while(res.next()){
+            return true;
         }
         return false;
     }

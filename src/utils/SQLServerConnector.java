@@ -6,16 +6,16 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class MySQLConnector {
-    private static MySQLConnector instance = new MySQLConnector();
+public class SQLServerConnector {
+    private static SQLServerConnector instance = new SQLServerConnector();
     private Connection connection;
 
-    private MySQLConnector() {
+    private SQLServerConnector() {
         try {
             Properties properties = new Properties();
             properties.load(
                     this.getClass().getClassLoader()
-                            .getResourceAsStream("MySQL_DBInfo.prop"));
+                            .getResourceAsStream("SQLServer_DBInfo.prop"));
 
             String driver = properties.getProperty("driver");
             String url = properties.getProperty("url");
@@ -32,16 +32,18 @@ public class MySQLConnector {
         }
     }
 
-    public Connection getMySQLConnection() {
-        return connection;
-    }
-
-    public static synchronized MySQLConnector getInstance() throws SQLException {
+    public static SQLServerConnector getInstance() throws SQLException {
         if (instance == null) {
-            instance = new MySQLConnector();
-        } else if (instance.getMySQLConnection().isClosed()) {
-            instance = new MySQLConnector();
+            instance = new SQLServerConnector();
+        } else if (instance.getSQLServerConnection().isClosed()) {
+            instance = new SQLServerConnector();
         }
         return instance;
     }
+
+    public Connection getSQLServerConnection() {
+        return connection;
+    }
+
+
 }

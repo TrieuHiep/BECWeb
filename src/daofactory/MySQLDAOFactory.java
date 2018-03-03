@@ -21,4 +21,5 @@ public class MySQLDAOFactory extends DAOFactory {
     public ElectronicsDAO getElectronicsDAO() {
         return null;
     }
+
 }

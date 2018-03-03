@@ -3,6 +3,9 @@ package daoimpl;
 import dao.persondaopkg.CustomerDAO;
 import dao.persondaopkg.PersonDAO;
 import model.customerpkg.Customer;
+import model.userpkg.Account;
+import model.userpkg.Address;
+import model.userpkg.FullName;
 import utils.MySQLConnector;
 
 import java.sql.Connection;
@@ -36,5 +39,10 @@ public class CustomerDAOImpl implements CustomerDAO {
             this.connection.rollback();
         }
         return false;
+    }
+
+    @Override
+    public Customer getCustomer(Account account) throws SQLException {
+        return new Customer(new FullName(), account, new Address(), 23,"hiep@gmail.com");
     }
 }

@@ -6,10 +6,10 @@ public class NovelBook extends Book {
     public NovelBook() {
     }
 
-    public NovelBook(int idBook, String bookName, String author,
+    public NovelBook(String bookName, String author,
                      double price, Publisher publisher,
                      int totalChapter) {
-        super(idBook, author, publisher);
+        super(author, publisher);
         this.totalChapter = totalChapter;
     }
 

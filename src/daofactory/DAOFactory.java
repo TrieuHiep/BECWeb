@@ -1,8 +1,8 @@
 package daofactory;
 
-import dao.persondaopkg.CustomerDAO;
 import dao.bookdaopkg.BookDAO;
 import dao.electronicsdaopkg.ElectronicsDAO;
+import dao.persondaopkg.CustomerDAO;
 
 public abstract class DAOFactory {
     public static final int MYSQL = 1;

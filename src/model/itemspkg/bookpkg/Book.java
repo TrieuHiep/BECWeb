@@ -3,25 +3,15 @@ package model.itemspkg.bookpkg;
 import model.itemspkg.Product;
 
 public class Book extends Product {
-    protected int idBook;
     protected String author;
     protected Publisher publisher;
 
     public Book() {
     }
 
-    public Book(int idBook, String author, Publisher publisher) {
-        this.idBook = idBook;
+    public Book(String author, Publisher publisher) {
         this.author = author;
         this.publisher = publisher;
-    }
-
-    public int getIdBook() {
-        return idBook;
-    }
-
-    public void setIdBook(int idBook) {
-        this.idBook = idBook;
     }
 
     public String getAuthor() {
