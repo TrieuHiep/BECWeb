@@ -42,7 +42,7 @@ public class Book extends Product implements ItemsInterface {
     }
 
     @Override
-    public void buy() {
+    public void seeDetails() {
 
     }
 }
