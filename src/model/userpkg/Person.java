@@ -57,4 +57,19 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Person)) return false;
+
+        Person person = (Person) o;
+
+        return getIdPerson() == person.getIdPerson();
+    }
+
+    @Override
+    public int hashCode() {
+        return getIdPerson();
+    }
 }
