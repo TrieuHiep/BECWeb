@@ -7,8 +7,7 @@ import model.userpkg.Person;
 import observerpkg.Observer;
 import observerpkg.Subject;
 
-public class Customer extends Person implements Observer {
-    private Subject sub = null;
+public class Customer extends Person{
     private String idCardMember;
 
     public Customer() {
@@ -20,14 +19,6 @@ public class Customer extends Person implements Observer {
         this.idCardMember = idCardMember;
     }
 
-    public Subject getSub() {
-        return sub;
-    }
-
-    public Subject setSub(Subject sub) {
-        return this.sub = sub;
-    }
-
     public String getIdCardMember() {
         return idCardMember;
     }
@@ -36,8 +27,4 @@ public class Customer extends Person implements Observer {
         this.idCardMember = idCardMember;
     }
 
-    @Override
-    public void Update() {
-        System.out.println("Sach co ID: "+sub.getState()+ " moi them vao kia!");
-    }
 }
