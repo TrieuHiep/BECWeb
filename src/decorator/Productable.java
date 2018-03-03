@@ -1,5 +1,5 @@
 package decorator;
 
 public interface Productable {
-    void displayCusInfo();
+     abstract void displayCusInfo();
 }

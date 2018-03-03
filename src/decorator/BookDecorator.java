@@ -9,6 +9,9 @@ public class BookDecorator extends ProductDecorator{
     @Override
     public void displayCusInfo() {
         super.displayCusInfo();
-        System.out.println("Translator is: "+translator);
+
+    }
+    public void displayTranslator(){
+        System.out.println("Translator Do Nhat Nam");
     }
 }

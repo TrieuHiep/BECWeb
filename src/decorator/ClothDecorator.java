@@ -10,7 +10,7 @@ public class ClothDecorator extends ProductDecorator {
     public void displayCusInfo() {
         super.displayCusInfo();
     }
-    public void displayResource(String resource){
-        System.out.println("Made in "+resource);
+    public void displayResource(){
+        System.out.println("Made in Japan");
     }
 }
