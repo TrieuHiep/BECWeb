@@ -11,14 +11,20 @@ public class Test {
         Observer ob2 = new Customer();
         Observer ob3 = new Customer();
         Subject sub = new BookDaoimp();
+
         sub.Register(ob1);
         sub.Register(ob2);
         sub.Register(ob3);
+
+        ob1.setSub(sub);
+        ob2.setSub(sub);
+        ob3.setSub(sub);
+
         BookDao bookdao = (BookDao) sub;
-        Book a = new Book();
+        Book a = new Book(1);
         bookdao.addBook(a);
         sub.Unregister(ob3);
-        Book b = new Book();
-        bookdao.addBook(a);
+        Book b = new Book(2);
+        bookdao.addBook(b);
     }
 }

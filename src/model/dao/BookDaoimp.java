@@ -9,7 +9,7 @@ import java.util.List;
 
 public class BookDaoimp extends Subject implements BookDao{
     private List<Observer> listOb;
-
+    private Book book;
     public List<Observer> getListOb() {
         return listOb;
     }
@@ -24,6 +24,7 @@ public class BookDaoimp extends Subject implements BookDao{
 
     @Override
     public void addBook(Book book) {
+        this.book = book;
         System.out.println(this.listOb.size());
         System.out.println("Them sach");
         Notify();
@@ -52,5 +53,11 @@ public class BookDaoimp extends Subject implements BookDao{
             x.Update();
         }
     }
+
+    @Override
+    public Object getState() {
+        return this.book.getIdBook();
+    }
+
 
 }

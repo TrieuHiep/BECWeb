@@ -10,6 +10,10 @@ public class Book extends Product {
     public Book() {
     }
 
+    public Book(int idBook) {
+        this.idBook = idBook;
+    }
+
     public Book(int idBook, String author, Publisher publisher) {
         this.idBook = idBook;
         this.author = author;
