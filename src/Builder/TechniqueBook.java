@@ -1,6 +1,6 @@
 package Builder;
 
-public abstract class TechniqueBook implements Item {
+public abstract class TechniqueBook extends Book implements Item {
 
 
     @Override

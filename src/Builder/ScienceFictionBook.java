@@ -1,6 +1,6 @@
 package Builder;
 
-public abstract class ScienceFictionBook implements Item {
+public abstract class ScienceFictionBook extends Book implements Item {
 
     @Override
     public Packing packing() {
