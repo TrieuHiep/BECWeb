@@ -1,5 +1,6 @@
 package daofactory;
 
+import dao.electronicsdaopkg.LaptopDAO;
 import dao.persondaopkg.CustomerDAO;
 import dao.bookdaopkg.BookDAO;
 import dao.electronicsdaopkg.ElectronicsDAO;
@@ -19,6 +20,11 @@ public class MySQLDAOFactory extends DAOFactory {
 
     @Override
     public ElectronicsDAO getElectronicsDAO() {
+        return null;
+    }
+
+    @Override
+    public LaptopDAO getLaptopDAO() {
         return null;
     }
 

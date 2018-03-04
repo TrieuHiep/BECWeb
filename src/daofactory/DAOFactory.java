@@ -2,6 +2,7 @@ package daofactory;
 
 import dao.bookdaopkg.BookDAO;
 import dao.electronicsdaopkg.ElectronicsDAO;
+import dao.electronicsdaopkg.LaptopDAO;
 import dao.persondaopkg.CustomerDAO;
 
 public abstract class DAOFactory {
@@ -13,6 +14,8 @@ public abstract class DAOFactory {
     public abstract BookDAO getBookDAO();
 
     public abstract ElectronicsDAO getElectronicsDAO();
+
+    public abstract LaptopDAO getLaptopDAO();
 
     public static DAOFactory getDAOFactory(int type) {
         switch (type) {

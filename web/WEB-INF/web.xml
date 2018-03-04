@@ -11,7 +11,14 @@
         <servlet-name>testServlet</servlet-name>
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
-
+    <servlet>
+        <servlet-name>searchProduct</servlet-name>
+        <servlet-class>controller.SearchProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchProduct</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
     <servlet>
         <servlet-name>Register</servlet-name>
         <servlet-class>controller.RegisterServlet</servlet-class>
