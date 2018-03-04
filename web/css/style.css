@@ -1,0 +1,116 @@
+body{
+	font-family: "Arial";
+}
+
+.title{
+	background: gray;
+	width: 300px;
+	height: 20px;
+}
+input{
+	width: auto;
+	height: 20px;
+	border-style: solid;
+	border-width: 1px;
+
+}
+input.buttonbuy{
+	background: #FF007F;
+	color: white;
+	width: 180px;
+	height: 40px;
+	border-radius: 5px;
+}
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: #111;*/
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    border-width: 1px;
+
+}
+.sidenav2 {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*background-color: #111;*/
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-style: solid;
+    border-color: #E0E0E0;
+    border-width: 1px;
+
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    
+    padding: 0px 10px;
+}
+.main2 {
+    margin-left: 40%; /* Same as the width of the sidenav */
+    
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+ul.products li {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 40px;
+}
+a.link {
+    
+    text-decoration: none;
+    
+    color: #818181;
+    display: block;
+}
+.price{
+	margin-top: 50px;
+}
+span.price{
+	color: red; font-weight: bold; font-size: 20px;
+}
+div span{
+	text-align: center;
+}
+.save{
+	background: #0080ff;
+	color: white;
+	width: 200px;
+	margin-top: 20px;
+}
+.description{
+	margin-top: 100px;
+}
+.setting{
+	align-content: center;
+	margin-top: 20px;
+}
