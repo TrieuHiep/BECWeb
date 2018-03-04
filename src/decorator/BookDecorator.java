@@ -7,8 +7,8 @@ public class BookDecorator extends ProductDecorator{
     }
 
     @Override
-    public void displayCusInfo() {
-        super.displayCusInfo();
+    public void viewDetail() {
+        super.viewDetail();
 
     }
     public void displayTranslator(){

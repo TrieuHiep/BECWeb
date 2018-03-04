@@ -8,7 +8,7 @@ public abstract class ProductDecorator implements Productable {
     }
 
     @Override
-    public void displayCusInfo() {
-        productable.displayCusInfo();
+    public void viewDetail() {
+        productable.viewDetail();
     }
 }

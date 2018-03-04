@@ -18,15 +18,19 @@
     <a href="#">Sách</a> <a href="#s">Đồ điện tử</a> <a href="#">Quần áo</a>
 </div>
 <div class="main">
+    <a href="#">Đăng nhập</a>
+    <a href="#">Đăng ký</a>
+    <a href="#">Đăng xuất</a>
+    <a href="index.jsp">Trang chủ</a>
     <ul class="products">
         <li>
-            <a class="link" href="#">
-                <img src="img/tivi40.jpg" alt="tivi sony 40 inch"/>
+            <a class="link" href="productdetail.jsp">
+                <img src="img/shirt.jpg" alt="ao phong black" width="200px" height="150px"/>
             </a>
             <img src="img/gift.png" style="width: 30px; height: 30px;"/><br>
-            <a class="link" href="#">Tivi Sony</a>
+            <a class="link" href="productdetail.jsp">Áo thun đen</a>
             <p>
-                $<strong>100</strong>
+                <strong>$50</strong>
             </p>
             <form>
                 <input type="submit" value="Thêm vào giỏ hàng">

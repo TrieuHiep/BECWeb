@@ -6,8 +6,8 @@ public class BookInformation implements Productable {
     private Book book;
 
     @Override
-    public void displayCusInfo() {
-        System.out.println("Day la thong tin khach hang mua sach");
+    public void viewDetail() {
+        System.out.println("Day la chi tiet sach");
     }
 
     public Book getBook() {

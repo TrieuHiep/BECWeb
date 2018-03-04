@@ -7,8 +7,8 @@ public class ClothDecorator extends ProductDecorator {
     }
 
     @Override
-    public void displayCusInfo() {
-        super.displayCusInfo();
+    public void viewDetail() {
+        super.viewDetail();
     }
     public void displayResource(){
         System.out.println("Made in Japan");

@@ -6,11 +6,11 @@ public class TestDecorator {
         Productable daoCloth = new ClothInformation();
 
         BookDecorator bookDecorator = new BookDecorator(daoBook);
-        bookDecorator.displayCusInfo();
+        bookDecorator.viewDetail();
         bookDecorator.displayTranslator();
 
         ClothDecorator clothDecorator = new ClothDecorator(daoCloth);
-        clothDecorator.displayCusInfo();
+        clothDecorator.viewDetail();
         clothDecorator.displayResource();
 
     }
