@@ -49,4 +49,9 @@ public class AccountDAOImpl implements AccountDAO{
         }
         return false;
     }
+
+    @Override
+    public boolean deleteAccount(Account account) throws SQLException {
+        return false;
+    }
 }
